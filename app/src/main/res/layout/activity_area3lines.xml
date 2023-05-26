@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".triangle.Area3Lines">
+
+    <TextView
+        android:id="@+id/activ_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مساحة المثلث بمعلومية أضلاعه"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/activ_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        app:layout_constraintTop_toBottomOf="@id/line_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textDirection="locale"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ln1"
+            android:layout_marginStart="70sp"
+            android:layout_marginEnd="70sp"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_design"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الضلع الأول"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/box1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textDirection="locale"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ln2"
+            android:layout_marginStart="70sp"
+            android:layout_marginEnd="70sp"
+            android:layout_width="150sp"
+            android:background="@drawable/edit_text_design"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الضلع الثاني"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/box2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textDirection="locale"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ln3"
+            android:layout_marginStart="70sp"
+            android:layout_marginEnd="70sp"
+            android:background="@drawable/edit_text_design"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الضلع الثالث"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text = "قم بحساب المساحة"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/box3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="المساحة ستظهر هنا"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
