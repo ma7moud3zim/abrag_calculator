@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/abrag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrag"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/abrag_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/triangle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مساحة المثلث"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/line_1"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_of_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/triangle_title"
+        android:layout_marginTop="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:text="بمعلومية أضلاعه"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:layout_marginStart="20sp"
+            android:text="بمعلومية زواياه"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addition_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_of_triangle"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:layout_marginStart="20sp"
+            android:text="إرتفاعه وقاعدته"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/addition_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="20sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rectangle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مساحة المستطيل"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/line_2"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_of_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_title"
+        android:layout_marginTop="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:text="بمعلومية أطوال أضلاعه"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:layout_marginStart="20sp"
+            android:text="بمعلومية الوتران"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_of_rectangle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="20sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/conv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التحويلات"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/line_3"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/btn_of_conv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/conv_title"
+        android:layout_marginTop="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:text="تحويل الأطوال"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white"
+            android:layout_marginStart="20sp"
+            android:text="فداني - متري"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_of_conv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="20sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
