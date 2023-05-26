@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".convert.FadanToMeter">
+    tools:context="com.azim.abrag.convert.FadanToMeter">
     <TextView
         android:id="@+id/activ_title"
         android:layout_width="wrap_content"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".triangle.Area3Lines">
+    tools:context="com.azim.abrag.rectangle.AreaWidthHeight">
 
     <TextView
         android:id="@+id/activ_title"

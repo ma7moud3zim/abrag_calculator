@@ -1,12 +1,12 @@
-package com.example.abrag.triangle
+package com.azim.abrag.triangle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.abrag.R
+import com.azim.abrag.R
 
-class Area3Lines : AppCompatActivity() {
+class Area3angles : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_area3lines)
+        setContentView(R.layout.activity_area3angles)
     }
 }

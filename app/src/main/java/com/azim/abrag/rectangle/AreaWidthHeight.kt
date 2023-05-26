@@ -1,12 +1,12 @@
-package com.example.abrag.convert
+package com.azim.abrag.rectangle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.abrag.R
+import com.azim.abrag.R
 
-class FadanToMeter : AppCompatActivity() {
+class AreaWidthHeight : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fadan_to_meter)
+        setContentView(R.layout.activity_rect_width_height)
     }
 }

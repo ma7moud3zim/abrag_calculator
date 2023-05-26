@@ -1,8 +1,8 @@
-package com.example.abrag.rectangle
+package com.azim.abrag.rectangle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.abrag.R
+import com.azim.abrag.R
 
 class AreaDiameter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.abrag
+package com.azim.abrag
 
 import org.junit.Test
 

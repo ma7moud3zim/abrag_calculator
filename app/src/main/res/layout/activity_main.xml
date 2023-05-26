@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.azim.abrag.MainActivity">
 
     <TextView
         android:id="@+id/abrag_title"
@@ -66,8 +66,9 @@
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
             android:text="بمعلومية أضلاعه"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
         <Button
             android:id="@+id/btn_3ang"
@@ -77,8 +78,9 @@
             android:textColor="@color/white"
             android:layout_marginStart="20sp"
             android:text="بمعلومية زواياه"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
 
     </LinearLayout>
@@ -101,8 +103,9 @@
             android:textColor="@color/white"
             android:layout_marginStart="20sp"
             android:text="إرتفاعه وقاعدته"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
 
     </LinearLayout>
@@ -151,9 +154,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
-            android:text="بمعلومية طوله وعرضه"
+            android:text="بالطول والعرض"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
 
         <Button
@@ -163,9 +167,10 @@
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
             android:layout_marginStart="20sp"
-            android:text="بمعلومية طول قطره"
+            android:text="بمعلومية قطره"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
     </LinearLayout>
 
@@ -219,8 +224,9 @@
             android:textColor="@color/white"
             android:layout_marginStart="25sp"
             android:text="تحويل من نظام فدان لنظام متر²"
+            android:fontFamily="sans-serif"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
     </LinearLayout>
     <LinearLayout

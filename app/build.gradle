@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.abrag'
+    namespace 'com.azim.abrag'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.abrag"
+        applicationId "com.azim.abrag"
         minSdk 24
         targetSdk 33
         versionCode 1
