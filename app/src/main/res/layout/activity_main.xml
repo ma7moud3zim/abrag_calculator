@@ -60,6 +60,7 @@
         app:layout_constraintRight_toRightOf="parent"
     >
         <Button
+            android:id="@+id/btn_3lns"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
@@ -69,6 +70,7 @@
             android:textSize="15sp"
             />
         <Button
+            android:id="@+id/btn_3ang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
@@ -92,6 +94,7 @@
         app:layout_constraintRight_toRightOf="parent"
         >
         <Button
+            android:id="@+id/btn_hbase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"

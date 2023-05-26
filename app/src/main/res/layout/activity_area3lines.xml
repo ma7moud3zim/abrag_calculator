@@ -49,16 +49,22 @@
         >
         <EditText
             android:id="@+id/ln1"
-            android:layout_marginStart="70sp"
-            android:layout_marginEnd="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginEnd="40sp"
             android:layout_width="150sp"
-            android:layout_height="wrap_content"
+            android:layout_height="35sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
             android:background="@drawable/edit_text_design"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="الضلع الأول"
+            android:layout_marginEnd="10sp"
             android:textSize="20sp"
             android:textColor="@color/red"
             android:textStyle="bold"
@@ -79,15 +85,21 @@
         >
         <EditText
             android:id="@+id/ln2"
-            android:layout_marginStart="70sp"
-            android:layout_marginEnd="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginEnd="40sp"
             android:layout_width="150sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
             android:background="@drawable/edit_text_design"
-            android:layout_height="wrap_content"/>
+            android:layout_height="35sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="الضلع الثاني"
+            android:layout_marginEnd="10sp"
             android:textSize="20sp"
             android:textColor="@color/red"
             android:textStyle="bold"
@@ -108,15 +120,21 @@
         >
         <EditText
             android:id="@+id/ln3"
-            android:layout_marginStart="70sp"
-            android:layout_marginEnd="70sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginEnd="40sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
             android:background="@drawable/edit_text_design"
             android:layout_width="150sp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="35sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="الضلع الثالث"
+            android:layout_marginEnd="10sp"
             android:textSize="20sp"
             android:textColor="@color/red"
             android:textStyle="bold"
@@ -129,6 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30sp"
         android:text = "قم بحساب المساحة"
+        android:padding="13sp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/box3"
