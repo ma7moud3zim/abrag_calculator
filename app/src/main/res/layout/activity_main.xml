@@ -146,22 +146,24 @@
         app:layout_constraintRight_toRightOf="parent"
         >
         <Button
+            android:id="@+id/btn_rect_width_height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
-            android:text="بمعلومية أطوال أضلاعه"
+            android:text="بمعلومية طوله وعرضه"
             android:textStyle="bold"
             android:textSize="15sp"
             />
 
         <Button
+            android:id="@+id/btn_diameter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
             android:layout_marginStart="20sp"
-            android:text="بمعلومية الوتران"
+            android:text="بمعلومية طول قطره"
             android:textStyle="bold"
             android:textSize="15sp"
             />
