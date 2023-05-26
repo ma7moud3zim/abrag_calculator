@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".convert.FadanToMeter">
+    <TextView
+        android:id="@+id/activ_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التحويل من فدان لمتر²"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/activ_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10sp"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fadan_edit_boxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        app:layout_constraintTop_toBottomOf="@id/line_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        >
+
+
+        <EditText
+            android:id="@+id/sahm"
+            android:layout_marginEnd="30sp"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:textColorHint="@color/gray"
+            android:text="سهم"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@drawable/edit_text_design"
+            />
+        <EditText
+            android:id="@+id/qerat"
+            android:layout_marginEnd="30sp"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:textColorHint="@color/gray"
+            android:text="قيراط"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@drawable/edit_text_design"
+            />
+
+
+        <EditText
+            android:id="@+id/fadan"
+            android:layout_marginEnd="20sp"
+            android:layout_width="80sp"
+            android:layout_height="35sp"
+            android:textColorHint="@color/gray"
+            android:text="فدان"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@drawable/edit_text_design"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/meter_sqr"
+        android:layout_marginTop="50sp"
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:textColorHint="@color/gray"
+        android:text="المساحة بالمتر²"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:background="@drawable/edit_text_design"
+        app:layout_constraintTop_toBottomOf="@+id/fadan_edit_boxes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/calc_btn_m2f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text = " قم بالتحويل من فدان لمتر²"
+        android:padding="13sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/meter_sqr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/calc_btn_f2m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text = " قم بالتحويل من متر² لفدان"
+        android:padding="13sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn_m2f"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/res_calc_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="المساحة بالمتر²:                       "
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn_f2m"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/res_calc_fadan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="المساحة بالفدان:                       "
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/res_calc_meter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
