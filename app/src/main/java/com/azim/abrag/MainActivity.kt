@@ -4,12 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.azim.abrag.R
 import com.azim.abrag.convert.FadanToMeter
 import com.azim.abrag.rectangle.AreaDiameter
 import com.azim.abrag.rectangle.AreaWidthHeight
 import com.azim.abrag.triangle.Area3Lines
-import com.azim.abrag.triangle.Area3angles
 import com.azim.abrag.triangle.AreaHeightBase
 
 class MainActivity : AppCompatActivity() {
@@ -21,13 +19,6 @@ class MainActivity : AppCompatActivity() {
         val btn3Ln:Button = findViewById(R.id.btn_3lns)
         btn3Ln.setOnClickListener {
             val intent = Intent(this@MainActivity, Area3Lines::class.java)
-            startActivity(intent)
-        }
-
-        // Click listener go to activity of calculating area of triangle with 3 angles
-        val btn3ang:Button = findViewById(R.id.btn_3ang)
-        btn3ang.setOnClickListener {
-            val intent = Intent(this@MainActivity, Area3angles::class.java)
             startActivity(intent)
         }
 

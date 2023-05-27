@@ -71,31 +71,6 @@
             android:textSize="20sp"
             />
         <Button
-            android:id="@+id/btn_3ang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_btn"
-            android:textColor="@color/white"
-            android:layout_marginStart="20sp"
-            android:text="بمعلومية زواياه"
-            android:fontFamily="sans-serif"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/addition_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btn_of_triangle"
-        android:layout_marginTop="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        >
-        <Button
             android:id="@+id/btn_hbase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,12 +84,14 @@
             />
 
     </LinearLayout>
+
+
     <LinearLayout
         android:id="@+id/line_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/addition_btn"
+        app:layout_constraintTop_toBottomOf="@id/btn_of_triangle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         >
@@ -222,7 +199,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
             android:textColor="@color/white"
-            android:layout_marginStart="25sp"
             android:text="تحويل من نظام فدان لنظام متر²"
             android:fontFamily="sans-serif"
             android:textStyle="bold"

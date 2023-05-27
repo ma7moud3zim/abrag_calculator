@@ -107,7 +107,7 @@
 
 
     <Button
-        android:id="@+id/calc_btn"
+        android:id="@+id/calc_btn_hb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
@@ -120,12 +120,13 @@
         app:layout_constraintRight_toRightOf="parent"
         />
     <TextView
+        android:id="@+id/res_calc_area_hb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:text="المساحة ستظهر هنا"
         android:textSize="40sp"
-        app:layout_constraintTop_toBottomOf="@id/calc_btn"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn_hb"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />

@@ -49,7 +49,7 @@
         >
         <EditText
             android:id="@+id/ln1"
-            android:layout_marginStart="50sp"
+            android:layout_marginStart="30sp"
             android:layout_marginEnd="40sp"
             android:layout_width="150sp"
             android:layout_height="35sp"
@@ -72,10 +72,46 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toBottomOf="@id/box1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textDirection="locale"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ln2"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="40sp"
+            android:layout_width="150sp"
+            android:layout_height="35sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@drawable/edit_text_design"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الطول أو العرض"
+            android:layout_marginEnd="10sp"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
 
 
     <Button
-        android:id="@+id/calc_btn"
+        android:id="@+id/calc_btn_area_diameter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
@@ -83,17 +119,18 @@
         android:padding="13sp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/box1"
+        app:layout_constraintTop_toBottomOf="@id/box2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
     <TextView
+        android:id="@+id/res_calc_area_diameter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:text="المساحة ستظهر هنا"
         android:textSize="40sp"
-        app:layout_constraintTop_toBottomOf="@id/calc_btn"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn_area_diameter"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />

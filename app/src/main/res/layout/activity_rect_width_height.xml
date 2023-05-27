@@ -48,7 +48,7 @@
         android:orientation="horizontal"
         >
         <EditText
-            android:id="@+id/ln1"
+            android:id="@+id/len"
             android:layout_marginStart="50sp"
             android:layout_marginEnd="40sp"
             android:layout_width="150sp"
@@ -84,7 +84,7 @@
         android:orientation="horizontal"
         >
         <EditText
-            android:id="@+id/ln2"
+            android:id="@+id/wid"
             android:layout_marginStart="50sp"
             android:layout_marginEnd="40sp"
             android:layout_width="150sp"
@@ -108,7 +108,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/calc_btn"
+        android:id="@+id/calc_btn_wh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30sp"
@@ -121,12 +121,13 @@
         app:layout_constraintRight_toRightOf="parent"
         />
     <TextView
+        android:id="@+id/res_calc_area_wl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:text="المساحة ستظهر هنا"
         android:textSize="40sp"
-        app:layout_constraintTop_toBottomOf="@id/calc_btn"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn_wh"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
